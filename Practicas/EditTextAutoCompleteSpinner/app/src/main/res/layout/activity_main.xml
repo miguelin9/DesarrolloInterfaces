@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="es.vcarmen.edittextautocompletespinner.MainActivity">
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edad"
+        android:inputType="number"
+        android:maxLength="3" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:imeOptions="normal"
+        android:inputType="textEmailAddress" />
+
+    <AutoCompleteTextView
+        android:id="@+id/textAuto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:hint="Elije un artista"
+        android:inputType="textAutoComplete" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/textAutoMulti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Elije un artista"
+        android:completionThreshold="1" />
+    
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!-- podemos indicar un recurso de array en el xml con android:entries y no usando java-->
+
+    <Button
+        android:id="@+id/leer"
+        android:text="@string/leer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

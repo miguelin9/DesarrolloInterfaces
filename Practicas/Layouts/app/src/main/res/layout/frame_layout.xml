@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.vcarmen.layouts.MainActivity"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/escudo"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="Real Jaén"
+        android:textSize="50sp" />
+
+</FrameLayout>
+<!-- este layout va superponiendo hijos uno detras de otro y cada hijo podemos darle una alineación
+en este ejemplo ponemos una imagen y un texto y el texto se super pone a la imagen
+gravity alinea en el mismo elemento
+layout_gravity alinea a nivel del layout ese elemento
+se pueden anidar atributos con tuberia |
+scaleType es para que se escale la imagen tanto por x como por y
+
+-->

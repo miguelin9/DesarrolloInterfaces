@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <translate xmlns:android="http://schemas.android.com/apk/res/android"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:fromXDelta="0%p"
+        android:toXDelta="100%p"
+        android:duration="4000"
+
+    />
+
+<!-- fichero para crear animaciones, set es un conjunto de animaciones que podemos poner varias si queremos
+    si no ponemos set solo es de una animacion tipos (translate, rotate...)
+    Se puede añadir a cualquier elemento no solo a textview
+    También se pueden crear animaciones desde código pero es más fácil desde aquí en xml.
+    la p despues del % indica que coge de referencia el tamaño del padre si no la ponemos coge el tamaño del elemento
+-->

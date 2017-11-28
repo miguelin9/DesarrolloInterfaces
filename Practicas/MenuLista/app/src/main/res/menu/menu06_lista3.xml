@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/LstOpcC1"
+        android:title="OPCIÓN 1 DE MENU DE LISTA C" />
+
+    <item
+        android:id="@+id/LstOpcC2"
+        android:title="OPCIÓN 2 DE MENU DE LISTA C"/>
+
+</menu>

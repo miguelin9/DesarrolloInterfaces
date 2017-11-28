@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boton1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        android:text="Texto1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boton2"
+        android:layout_below="@id/boton1"
+        android:layout_above="@id/texto1"/>
+
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        android:text="Texto2"
+        android:layout_toRightOf="@id/boton2"
+        android:layout_below="@id/boton1"/>
+
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boton3"
+        android:layout_below="@id/texto2"
+        android:layout_toRightOf="@id/boton2"
+        android:layout_alignRight="@id/texto2"/>
+
+    <TextView
+        android:id="@+id/texto3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:text="Texto3"
+        android:layout_toRightOf="@id/boton3"
+        android:layout_above="@id/texto1"
+        android:layout_below="@id/texto2"/>
+
+</RelativeLayout>
+
+<!-- este layout ancla los elementos ya sean al padre o a otro elemento a traves de su id
+se pueden alinear también desde padre o otro elemento, da mucho juego pero hay que tener cuidado
+con los solapamientos
+-->

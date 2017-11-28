@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="es.vcarmen.botones.MainActivity">
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numero"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/inc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inc" />
+
+        <Button
+            android:id="@+id/dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dec" />
+
+        <ToggleButton
+            android:id="@+id/tBtn"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textOff="@string/tbOff"
+            android:textOn="@string/tbOn"
+            android:checked="false"/>
+        <!-- el atributo checked define el estado por defecto y en codigo podemos usar isChecked(false); -->
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/tSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/tbOff"
+        android:textOn="@string/tbOn"
+        android:checked="false"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icono"
+        android:background="@android:color/transparent"/>
+    <!-- mipmap se usa para para el icono de la app y drawable para recursos de imagenes
+    hay dos tipos de imagenes bitmap y vectorial -->
+    <!-- http://assets.codly.io/ pag web para crear los iconos de android en distintos tamaños -->
+    <!-- en @android ya hay recursos definidos y en este caso cogemos el color transparente para el fondo
+     para ver los que existen segun la api entrar a esta web: http://androiddrawables.com/ -->
+
+    <!-- vamos a probar adaptadores con un autocompletar
+        el completionThreshold se le indica la cantidad de letras que introduce y salta el autocompletar
+     -->
+    <AutoCompleteTextView
+        android:id="@+id/textAuto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoComplete"
+        android:hint="Elije un artista"
+        android:completionThreshold="1"/>
+</LinearLayout>

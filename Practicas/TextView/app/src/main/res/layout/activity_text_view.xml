@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/miLinearLayout"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/miTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/miTextView"
+            android:textColor="@color/colorRojo"
+            android:textSize="18sp"
+            android:typeface="sans"
+            android:textStyle="bold|italic"
+            android:shadowColor="@color/colorShadow"
+            android:shadowDy="5"
+            android:shadowDx="5"
+            android:shadowRadius="5"
+
+
+            />
+        <Button
+            android:id="@+id/boton1"
+            android:text="@string/boton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deleteAnimals"/>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnAdd"
+            />
+        <Button
+            android:id="@+id/btnChangeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnChangeTitle"
+            />
+        <Button
+            android:id="@+id/btnChangeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnChangeButton"
+            />
+
+</LinearLayout>
+    <!-- se ha borrado todo el codigo xml para empezar de 0
+        Se crea un linearLayout y añadimos la altura y anchura que es obligatorio
+        Creamos un texview
+        wrap_contet = tamaño que ocupe el texto
+        match_parent = tamaño del padre que sería todo
+        tambien aparte de los dos anteriores podemos poner unidades para asignar tamaño
+        y añadimos un texto desde recursos
+        ahora cambiamos el color: line 12
+        cambiamos el tamaño del texto, se aconseja poner sp porque tiene en cuenta la fuente del sistema
+        cambiamos el tipo de letra: line 14 si queremos añadir otras fuentes hay que añadirla desde fuera como un recurso
+        cambio el estilo a italica y negrita
+        añadimos sombras line 16-19
+    -->

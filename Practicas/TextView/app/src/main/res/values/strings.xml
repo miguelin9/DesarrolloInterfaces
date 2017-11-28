@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TextView</string>
+    <string name="miTextView">Hola soy un TextView</string>
+    <string name="boton1">Borrar</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnChangeTitle">changeTitle</string>
+    <string name="btnChangeButton">btnChangeButton</string>
+</resources>

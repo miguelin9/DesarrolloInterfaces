@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EditTextAutoCompleteSpinner</string>
+    <string name="nombre">Nombre</string>
+    <string name="edad">Edad</string>
+    <string name="email">Email</string>
+    <string name="leer">Leer</string>
+</resources>

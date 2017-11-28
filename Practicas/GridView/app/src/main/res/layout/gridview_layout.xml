@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/cara"
+        />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/foto"
+        android:layout_alignParentRight="true"
+        android:textSize="25sp"
+        android:text="Nombre"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombre"
+        android:layout_toRightOf="@id/foto"
+        android:layout_alignParentRight="true"
+        android:text="Apellidos"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

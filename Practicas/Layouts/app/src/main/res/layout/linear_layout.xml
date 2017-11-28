@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8">
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Boton1"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="left"
+        android:text="Boton2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="right"
+        android:text="Boton3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="Boton4"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Boton5"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:text="Boton6"/>
+
+</LinearLayout>
+<!-- Este layout va colocando elementos uno seguido de otro segun la orientation que le demos vertical o horinzontal
+si los elementos ya no caben en el layout no se veran a no ser que metamos un scrollview o anidar mas layout
+en este layout hay un atributo weight que asigna un peso a los elementos el peso va en relacion al espacio libre que haya o quede
+weightSum="7" asigna el total de pesos, sirve para dejar espacios libres
+-->
