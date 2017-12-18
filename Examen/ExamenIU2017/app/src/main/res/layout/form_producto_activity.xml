@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.vcarmen.exameniu2017.ListaProductoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:id="@+id/fTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titulo"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:layout_below="@id/toolbar2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:id="@+id/fDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/fTitulo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:id="@+id/fPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:layout_margin="10dp"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/fDescripcion"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/textoCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/fPrecio"
+        android:text="Categoria"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Spinner
+        android:id="@+id/fCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/textoCategoria"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/textoFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/fCategoria"
+        android:text="On = foto1 | off = foto2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ToggleButton
+        android:id="@+id/fFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/textoFoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/anadir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fFoto"
+        android:layout_margin="10dp"
+        android:text="Añadir"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
